@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[Worker](
+	[workerId] [int] IDENTITY(1,1) NOT NULL,
+	[forename] [varchar](50) NULL,
+	[surname] [varchar](50) NULL,
+	[email] [varchar](50) NULL,
+	[dob] [date] NULL,
+ CONSTRAINT [PK_Worker] PRIMARY KEY CLUSTERED 
+(
+	[workerId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
